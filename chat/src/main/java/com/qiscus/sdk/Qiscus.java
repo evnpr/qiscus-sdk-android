@@ -351,11 +351,11 @@ public class Qiscus {
             } else {
                 Observable.just(null)
                         .doOnNext(o -> {
-                            try {
+//                             try {
 //                                 FirebaseInstanceId.getInstance().deleteInstanceId();
-                            } catch (IOException ignored) {
+//                             } catch (IOException ignored) {
                                 //Do nothing
-                            }
+//                             }
                         })
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
