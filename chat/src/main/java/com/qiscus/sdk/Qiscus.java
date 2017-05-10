@@ -352,7 +352,7 @@ public class Qiscus {
                 Observable.just(null)
                         .doOnNext(o -> {
                             try {
-//                                 FirebaseInstanceId.getInstance().deleteInstanceId();
+                                FirebaseInstanceId.getInstance().deleteInstanceId();
                             } catch (IOException ignored) {
                                 //Do nothing
                             }
